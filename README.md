@@ -1,6 +1,13 @@
-# Jovii — Official Developer Website & Privacy Policy
+# Jovii Studio — Developer Portal & Legal Disclosures
 
-Official developer portal and legal disclosures for **Jovii – Device Info** (`com.bps.jovii`).
+Official developer website for **Bikram Pratap Singh** (`Jovii Studio`).
 
-- **Privacy Policy**: [https://bikrampratapsingh.github.io/](https://bikrampratapsingh.github.io/)
-- **Authorized Digital Sellers (app-ads.txt)**: [https://bikrampratapsingh.github.io/app-ads.txt](https://bikrampratapsingh.github.io/app-ads.txt)
+## Structure
+
+- **Developer Home**: [https://bikrampratapsingh.github.io/](https://bikrampratapsingh.github.io/)
+- **Authorized Digital Sellers (`app-ads.txt`)**: [https://bikrampratapsingh.github.io/app-ads.txt](https://bikrampratapsingh.github.io/app-ads.txt)
+- **Jovii Privacy Policy**: [https://bikrampratapsingh.github.io/jovii/](https://bikrampratapsingh.github.io/jovii/)
+- **Glass Widgets Privacy Policy**: [https://bikrampratapsingh.github.io/glass-widgets/](https://bikrampratapsingh.github.io/glass-widgets/)
+
+## Contact
+Email: [joviistudio9@gmail.com](mailto:joviistudio9@gmail.com)

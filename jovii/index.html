@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Jovii Device & Hardware Info</title>
+    <style>
+        :root {
+            --bg-primary: #0F172A;
+            --bg-card: #1E293B;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-cyan: #06B6D4;
+            --accent-purple: #8B5CF6;
+            --border-color: #334155;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-primary: #F8FAFC;
+                --bg-card: #FFFFFF;
+                --text-primary: #0F172A;
+                --text-secondary: #475569;
+                --accent-cyan: #0891B2;
+                --accent-purple: #7C3AED;
+                --border-color: #E2E8F0;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 36px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(6, 182, 212, 0.15);
+            color: var(--accent-cyan);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-top: 28px;
+            margin-bottom: 8px;
+        }
+        p, li {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        .callout {
+            background-color: rgba(139, 92, 246, 0.1);
+            border-left: 4px solid var(--accent-purple);
+            padding: 14px 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .callout p {
+            margin: 0;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+        .contact-box {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            margin-top: 20px;
+        }
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" style="color: var(--accent-cyan); text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block; margin-bottom: 16px;">&larr; Developer Home</a><br>
+        <span class="badge">Google Play Data Safety Certified</span>
+        <h1>Privacy Policy for Jovii</h1>
+        <div class="meta-info">
+            <strong>Application:</strong> Jovii - Device & Hardware Info<br>
+            <strong>Package:</strong> com.bps.jovii<br>
+            <strong>Developer:</strong> Jovii Studio<br>
+            <strong>Effective Date:</strong> October 2026<br>
+            <strong>Public Policy URL:</strong> <a href="https://bikrampratapsingh.github.io/jovii/">https://bikrampratapsingh.github.io/jovii/</a>
+        </div>
+
+        <div class="callout">
+            <p><strong>100% On-Device Telemetry:</strong> Jovii operates strictly as a local hardware diagnostic utility. All CPU, RAM, GPU, battery, thermal, and sensor benchmarks are computed on-device in volatile memory and are <strong>never</strong> transmitted to external servers.</p>
+        </div>
+
+        <h2>1. Introduction & Overview</h2>
+        <p>Jovii ("we", "our", or "the app") is developed by Jovii Studio as a private, transparent hardware telemetry and diagnostic tool. We believe that detailed hardware diagnostics should never compromise personal privacy. This Privacy Policy discloses what data is queried, how device permissions are utilized, and our compliance with Google Play Store policies.</p>
+
+        <h2>2. Data Collection and Usage</h2>
+        <p>Jovii does <strong>not</strong> require user registration, accounts, or login credentials. We do not collect, store, or transmit personally identifiable information (PII) such as your name, email address, physical address, phone number, contacts, photographs, or stored files.</p>
+        <ul>
+            <li><strong>Hardware & Telemetry Data:</strong> System specs (CPU clock speeds, RAM utilization, SoC chipset, battery temperature, battery health metrics, storage volumes, display resolution, and sensor readings) are queried purely in real-time to render on-screen telemetry.</li>
+            <li><strong>Zero Diagnostic Uploads:</strong> Diagnostic data never leaves your device. When you use the "Export System Report" feature, the generated PDF or text file is saved locally to your device storage under your explicit control.</li>
+        </ul>
+
+        <h2>3. Permission Disclosures</h2>
+        <p>In accordance with Google Play Developer Policies, all sensitive permissions are used solely for user-initiated diagnostics:</p>
+        <ul>
+            <li><strong>Camera (CAMERA):</strong> Used exclusively to query camera sensor hardware capabilities (apertures, focal lengths, resolutions) and to toggle the LED flashlight torch during the hardware actuator test. Does not capture, store, or transmit images or videos.</li>
+            <li><strong>Microphone (RECORD_AUDIO):</strong> Used exclusively during the user-initiated "Sound & Noise Level Meter" to measure ambient decibels in real-time. Audio streams are sampled entirely in volatile device RAM to compute RMS sound levels and are discarded immediately. No audio is ever recorded to disk, uploaded, or analyzed for speech.</li>
+            <li><strong>Bluetooth & Nearby Devices (BLUETOOTH, BLUETOOTH_CONNECT, NEARBY_WIFI_DEVICES):</strong> Declared with the <code>neverForLocation</code> flag. Used exclusively to detect connected Bluetooth audio accessories (such as Galaxy Buds or wireless headphones) and query their battery percentages for display within the app and on the Bluetooth Earbuds home screen widget. Never used to track physical location or communicate with advertising beacons.</li>
+            <li><strong>Biometric Scanner (USE_BIOMETRIC):</strong> Used during interactive hardware diagnostics to verify the availability, security tier (Class 3 Strong / Weak), and responsiveness of biometric hardware (fingerprint scanner or face unlock). Authentication is executed exclusively by Android's secure <code>BiometricPrompt</code> and processed inside the device's hardware-isolated Secure Enclave / TEE. Jovii receives only an ephemeral pass/fail validation signal and never accesses biometric data or fingerprint/face templates.</li>
+            <li><strong>Sensors (HIGH_SAMPLING_RATE_SENSORS):</strong> Used in the interactive Sensor Lab (Accelerometer, Compass, Light Sensor, Proximity Sensor, Gyroscope, Barometer) for real-time physics simulations and heading calculations. Telemetry is processed entirely in volatile memory and is never recorded or transmitted.</li>
+            <li><strong>Network & Wi-Fi State (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET):</strong> Used to query local network interface link speeds, Wi-Fi signal strength (dBm), and local IP addresses for live network diagnostic telemetry.
+                <ul>
+                    <li><em>Public IP & ISP Lookup:</em> When utilizing the Network Widget, the app queries public lookup endpoints (such as <code>ipwho.is</code> or <code>ipify.org</code>) solely to identify your public ISP name and city for network diagnostics. Users can toggle IP masking at any time within widget settings.</li>
+                    <li><em>Network Speed Test:</em> When initiating an on-demand speed test, the app transfers standard test payloads against public high-performance CDN test servers (Cloudflare / OVH) to calculate throughput and latency. No personal browsing data or user telemetry is transmitted.</li>
+                </ul>
+            </li>
+            <li><strong>Foreground Service (FOREGROUND_SERVICE):</strong> Powers the optional live status bar speed monitor notification. All calculations execute locally on-device.</li>
+            <li><strong>Do Not Disturb & Sound Profile (ACCESS_NOTIFICATION_POLICY):</strong> Used exclusively by the QuickTool widget to toggle between Normal, Vibrate, and Silent sound profiles on modern Android versions without modifying other system settings.</li>
+        </ul>
+
+        <h2>4. Third-Party Services & Advertising (Google AdMob)</h2>
+        <p>To support ongoing maintenance and provide Jovii as a free utility, the app integrates Google Mobile Ads (AdMob) and Google Play Services.</p>
+        <ul>
+            <li><strong>Information Processed by Google:</strong> Google AdMob may process pseudonymous device identifiers (such as the Google Advertising ID / AAID), IP address, general technical characteristics, and ad interaction metrics strictly for ad serving, anti-fraud verification, and performance measurement.</li>
+            <li><strong>User Privacy Controls:</strong> You may reset your Advertising ID or opt out of personalized ad targeting at any time via your device's Android System Settings: <code>Settings &rarr; Google &rarr; Ads</code>.</li>
+            <li><strong>Zero Sale of Personal Data:</strong> We do not sell, rent, or monetize your personal information to data brokers or third parties.</li>
+        </ul>
+
+        <h2>5. Children's Online Privacy Protection (COPPA)</h2>
+        <p>Jovii complies with the Children's Online Privacy Protection Act (COPPA) and Google Play Families Policies. The app is intended for a general audience and does not knowingly collect personal information from children under the age of 13.</p>
+
+        <h2>6. Data Retention and Deletion</h2>
+        <p>Because Jovii does not collect or store user accounts, diagnostic databases, or personal identifiers on remote servers, there is no retained user data. Closing the application or uninstalling it purges all volatile memory telemetry immediately.</p>
+
+        <h2>7. Contact and Inquiries</h2>
+        <p>If you have any questions, feedback, or compliance inquiries regarding this Privacy Policy, please contact the developer:</p>
+        <div class="contact-box">
+            <strong>Developer:</strong> Jovii Studio<br>
+            <strong>Inquiries Email:</strong> <a href="mailto:joviistudio9@gmail.com">joviistudio9@gmail.com</a><br>
+            <strong>Application:</strong> Jovii - Device & Hardware Info
+        </div>
+    </div>
+</body>
+</html>
