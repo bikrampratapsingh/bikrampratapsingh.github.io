@@ -107,6 +107,11 @@
         a:hover {
             text-decoration: underline;
         }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0 12px; }
+        th, td { text-align: left; padding: 8px 10px; border: 1px solid var(--border-color); color: var(--text-secondary); vertical-align: top; }
+        th { color: var(--text-primary); background-color: rgba(139, 92, 246, 0.08); }
+        td:first-child { color: var(--text-primary); font-weight: 600; white-space: nowrap; }
+        @media (max-width: 520px) { td:first-child { white-space: normal; } .container { padding: 24px 18px; } }
     </style>
 </head>
 <body>
@@ -117,33 +122,72 @@
         <div class="meta-info">
             <strong>Application:</strong> Glass Widgets<br>
             <strong>Developer:</strong> Jovii Studio / Bikram Pratap Singh<br>
-            <strong>Effective Date:</strong> October 2026<br>
+            <strong>Effective Date:</strong> October 30, 2026<br>
             <strong>Public Policy URL:</strong> <a href="https://bikrampratapsingh.github.io/glass-widgets/">https://bikrampratapsingh.github.io/glass-widgets/</a>
         </div>
 
         <div class="callout">
-            <p><strong>100% On-Device Personalization:</strong> Glass Widgets renders all translucent widgets, battery indicators, and weather/clock graphics locally on your device. We do not operate external tracking servers or collect personal identifiers.</p>
+            <p><strong>On-device first:</strong> Glass Widgets has no account, no sign-in and no server of its own. Your calendar, steps, screen time, music, contacts, photos and reminders are used only on your phone to draw your widgets.</p>
         </div>
 
-        <h2>1. Introduction</h2>
-        <p>Glass Widgets ("we", "our", or "the app") provides customizable frosted-glass and Material You widgets for Android homescreens. We are committed to transparency and respect user privacy at every level.</p>
+<p>Glass Widgets ("the app") is an Android app of frosted glass home-screen widgets, made by Jovii Studio ("we", "us"). This policy explains what information the app uses, why, where it goes, and the choices you have. We wrote it to be short and honest: the app has no account, no sign-in and no server of our own, and we do not sell your data.</p>
 
-        <h2>2. Data Collection and Usage</h2>
-        <p>Glass Widgets operates without user registration or cloud accounts. We do not harvest, monetize, or transmit personally identifiable information (PII) such as names, phone numbers, contact books, or personal media files.</p>
-        <ul>
-            <li><strong>Widget Customizations:</strong> Layout configurations, style choices, and font selections are stored exclusively on your device in secure local preferences.</li>
-            <li><strong>System Metrics:</strong> Telemetry such as battery levels, network status, or time are read purely in memory to refresh widget views on your homescreen.</li>
-        </ul>
+<h2>1. Summary</h2>
+<ul>
+  <li>Your calendar events, steps, screen time, music, contacts, photos and reminders are used only on your phone to draw your widgets. We never receive them.</li>
+  <li>The app connects to a few services to work: Open-Meteo (weather and air quality), Cloudflare (speed tests you start), Google AdMob (ads) and Google Play (update checks).</li>
+  <li>Every permission is optional. If you decline one, only the widgets that need it stop showing that information.</li>
+</ul>
 
-        <h2>3. Third-Party Services & Advertising</h2>
-        <p>To support ongoing development, Glass Widgets may display digital ads provided by Google AdMob. Google AdMob complies with Google Play policies and may use anonymized device identifiers (such as the Google Advertising ID) solely for frequency capping and fraud detection.</p>
+<h2>2. Information used on your device</h2>
+<p>The app asks for the following access only when you use a widget that needs it. This information is processed on your phone and is not sent to us or to anyone else, except as described in section 3.</p>
+<table>
+  <tr><th>Access</th><th>What it is used for</th></tr>
+  <tr><td>Calendar (read only)</td><td>Shows your events on the calendar widgets and finds upcoming flights in your calendar for the travel widgets.</td></tr>
+  <tr><td>Approximate location</td><td>Finds your city for weather and air quality. The app uses approximate (city-level) location only, never precise location, and does not request background location access. You can search for a city instead.</td></tr>
+  <tr><td>Nearby devices (Bluetooth)</td><td>Shows the battery level of your connected earbuds and other Bluetooth devices.</td></tr>
+  <tr><td>Physical activity</td><td>Counts your steps for the fitness widgets, using the phone's step sensor.</td></tr>
+  <tr><td>Usage access</td><td>Shows your screen time and most-used apps.</td></tr>
+  <tr><td>Notification access</td><td>Reads only the track that is playing (title, artist, artwork, play state) for the music widgets. Other notifications are ignored and never stored.</td></tr>
+  <tr><td>Do Not Disturb access</td><td>Lets the Silent and Do Not Disturb widgets switch modes. Asked only when you tap one of them.</td></tr>
+  <tr><td>Modify system settings</td><td>Lets the Quick Settings widgets change brightness, auto-rotate and screen timeout only when you tap them.</td></tr>
+  <tr><td>Contacts you pick</td><td>The contacts widgets use the system contact picker, one person at a time. The app saves only the name and number of the people you choose. It cannot read your address book.</td></tr>
+  <tr><td>Photos you pick</td><td>The photo widgets use the system photo picker. The app keeps a small copy of each photo you choose, inside its own storage. It cannot browse your gallery.</td></tr>
+  <tr><td>Set wallpaper, set alarm, vibrate</td><td>Sets a wallpaper you choose, starts a timer in your clock app from the timer widget, and gives a short vibration when you switch to Vibrate mode.</td></tr>
+</table>
+<p>Things you create in the app, such as reminders, widget styles, counters and favourites, are stored only in the app's private storage on your phone.</p>
 
-        <h2>4. Contact & Developer Inquiries</h2>
-        <p>If you have questions regarding this Privacy Policy or app functionality, please contact:</p>
-        <p>
-            <strong>Developer:</strong> Bikram Pratap Singh (Jovii Studio)<br>
-            <strong>Email:</strong> <a href="mailto:joviistudio9@gmail.com">joviistudio9@gmail.com</a>
-        </p>
+<h2>3. Information shared with third parties</h2>
+<p><strong>Open-Meteo (weather and air quality).</strong> To fetch the forecast, the app sends the coordinates of your chosen or approximate location to Open-Meteo (open-meteo.com). When you search for a city, the text you type is sent to Open-Meteo's geocoding service. Like any website, Open-Meteo receives your IP address. No other information is sent. See <a href="https://open-meteo.com/en/terms" target="_blank">Open-Meteo's terms and privacy information</a>.</p>
+<p><strong>Cloudflare (speed tests).</strong> Speed tests run only when you tap the speed test widget. They download and upload test data to Cloudflare's speed test servers (speed.cloudflare.com), which receive your IP address. Results are kept only on your phone. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare's privacy policy</a>.</p>
+<p><strong>Google AdMob (ads).</strong> The app shows ads through Google AdMob, including optional rewarded ads that unlock premium widgets. AdMob may collect your device's advertising ID, IP address, approximate location derived from it, device and app information, and how you interact with ads, to show ads, measure them and prevent fraud. Where required (for example in the EEA, UK and Switzerland), the app asks for your consent through Google's consent form before ads are personalised, and you can change your choice at any time in Settings → Ad privacy. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank">how Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's privacy policy</a>.</p>
+<p><strong>Google Play (update checks).</strong> When you tap "Check for updates", the app asks Google Play whether a newer version is available.</p>
+<p>We do not sell your personal information, and we do not share it with anyone except as described above.</p>
+
+<h2>4. Backup</h2>
+<p>If Android backup is turned on for your Google account, Android may back up the app's settings and saved data (such as widget styles, reminders, unlocked widgets, and the contacts and photos you picked for widgets) to your Google account, so they can be restored on a new phone. This backup is handled by Google and encrypted according to your device's backup settings. You can turn it off in your phone's backup settings.</p>
+
+<h2>5. Data retention and deletion</h2>
+<p>Everything the app stores stays on your phone until you remove it. Removing a widget deletes its saved style and any photo only it used. You can delete all of the app's data at any time by clearing its storage (Settings → Apps → Glass Widgets → Storage → Clear storage) or by uninstalling the app. Because we do not hold your data on any server, there is nothing for us to delete on our side; to remove data held by AdMob, reset or delete your advertising ID in your phone's Google settings.</p>
+
+<h2>6. Security</h2>
+<p>All network requests made by the app use encrypted HTTPS connections. Data stored by the app is kept in its private storage, which other apps cannot read.</p>
+
+<h2>7. Children</h2>
+<p>The app is not directed at children under 13 and we do not knowingly collect personal information from children. If you believe a child has provided information through the app, contact us and we will help remove it.</p>
+
+<h2>8. Your choices</h2>
+<ul>
+  <li>Grant or revoke any permission at any time in your phone's Settings → Apps → Glass Widgets → Permissions (Usage, Notification, Do Not Disturb and Modify system settings access are under Special app access).</li>
+  <li>Choose a city instead of sharing your location.</li>
+  <li>Change your ad consent in the app's Settings → Ad privacy, and reset or delete your advertising ID in your phone's Google settings.</li>
+</ul>
+
+<h2>9. Changes to this policy</h2>
+<p>We may update this policy when the app changes. The new version will be posted on this page with a new effective date.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy or your data: <a href="mailto:joviistudio9@gmail.com">joviistudio9@gmail.com</a> (Jovii Studio).</p>
     </div>
 </body>
 </html>
