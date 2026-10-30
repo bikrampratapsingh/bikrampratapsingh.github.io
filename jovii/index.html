@@ -125,7 +125,7 @@
             <strong>Application:</strong> Jovii - Device & Hardware Info<br>
             <strong>Package:</strong> com.bps.jovii<br>
             <strong>Developer:</strong> Jovii Studio<br>
-            <strong>Effective Date:</strong> October 2026<br>
+            <strong>Effective Date:</strong> October 27, 2026<br>
             <strong>Public Policy URL:</strong> <a href="https://bikrampratapsingh.github.io/jovii/">https://bikrampratapsingh.github.io/jovii/</a>
         </div>
 
@@ -146,7 +146,7 @@
         <h2>3. Permission Disclosures</h2>
         <p>In accordance with Google Play Developer Policies, all sensitive permissions are used solely for user-initiated diagnostics:</p>
         <ul>
-            <li><strong>Camera (CAMERA):</strong> Used exclusively to query camera sensor hardware capabilities (apertures, focal lengths, resolutions) and to toggle the LED flashlight torch during the hardware actuator test. Does not capture, store, or transmit images or videos.</li>
+            <li><strong>Camera & Flashlight:</strong> Jovii does <strong>not</strong> request the <code>CAMERA</code> permission and cannot capture photos or record video. It reads camera hardware specifications and toggles the flashlight for hardware diagnostics using Android system interfaces that do not require camera access.</li>
             <li><strong>Microphone (RECORD_AUDIO):</strong> Used exclusively during the user-initiated "Sound & Noise Level Meter" to measure ambient decibels in real-time. Audio streams are sampled entirely in volatile device RAM to compute RMS sound levels and are discarded immediately. No audio is ever recorded to disk, uploaded, or analyzed for speech.</li>
             <li><strong>Bluetooth & Nearby Devices (BLUETOOTH, BLUETOOTH_CONNECT, NEARBY_WIFI_DEVICES):</strong> Declared with the <code>neverForLocation</code> flag. Used exclusively to detect connected Bluetooth audio accessories (such as Galaxy Buds or wireless headphones) and query their battery percentages for display within the app and on the Bluetooth Earbuds home screen widget. Never used to track physical location or communicate with advertising beacons.</li>
             <li><strong>Biometric Scanner (USE_BIOMETRIC):</strong> Used during interactive hardware diagnostics to verify the availability, security tier (Class 3 Strong / Weak), and responsiveness of biometric hardware (fingerprint scanner or face unlock). Authentication is executed exclusively by Android's secure <code>BiometricPrompt</code> and processed inside the device's hardware-isolated Secure Enclave / TEE. Jovii receives only an ephemeral pass/fail validation signal and never accesses biometric data or fingerprint/face templates.</li>
@@ -165,6 +165,7 @@
         <p>To support ongoing maintenance and provide Jovii as a free utility, the app integrates Google Mobile Ads (AdMob) and Google Play Services.</p>
         <ul>
             <li><strong>Information Processed by Google:</strong> Google AdMob may process pseudonymous device identifiers (such as the Google Advertising ID / AAID), IP address, general technical characteristics, and ad interaction metrics strictly for ad serving, anti-fraud verification, and performance measurement.</li>
+            <li><strong>European Economic Area (EEA) and UK Consent:</strong> For users in the EEA and UK, Jovii integrates the Google User Messaging Platform (UMP) SDK to collect consent in accordance with IAB Europe TCF v2.2. You can manage or revoke your privacy and ad consent choices at any time from within the app by navigating to <code>Settings &rarr; Ad Privacy Preferences</code>.</li>
             <li><strong>User Privacy Controls:</strong> You may reset your Advertising ID or opt out of personalized ad targeting at any time via your device's Android System Settings: <code>Settings &rarr; Google &rarr; Ads</code>.</li>
             <li><strong>Zero Sale of Personal Data:</strong> We do not sell, rent, or monetize your personal information to data brokers or third parties.</li>
         </ul>
