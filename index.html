@@ -218,6 +218,16 @@
             text-decoration: underline;
         }
 
+        .app-card { position: relative; cursor: pointer; }
+
+        .card-link { color: inherit; text-decoration: none; }
+
+        .card-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+
+        .card-link:focus-visible::after { outline: 2px solid var(--accent-cyan); outline-offset: 2px; }
+
+        .card-links { position: relative; z-index: 1; cursor: default; }
+
         .compliance-box {
             background: var(--bg-card);
             border: 1px solid var(--border-card);
@@ -287,13 +297,12 @@
                 <div class="card-top">
                     <img class="app-icon" src="/assets/jovii-icon.webp" alt="Jovii app icon" width="64" height="64">
                     <span class="card-tag tag-active">Google Play • Published</span>
-                    <h2 class="app-title">Jovii – Device Info</h2>
+                    <h2 class="app-title"><a class="card-link" href="/apps/jovii/">Jovii – Device Info</a></h2>
                     <p class="app-desc">
                         Advanced hardware diagnostics and battery health analysis. Features real-time CPU/GPU benchmarks, dynamic Material You widgets, and zero cloud tracking.
                     </p>
                 </div>
                 <div class="card-links">
-                    <a class="btn-link" href="/apps/jovii/">App page &rarr;</a>
                     <a class="btn-link" href="/jovii/">Privacy Policy &rarr;</a>
                     <a class="btn-link" href="/jovii/terms/">Terms of Service &rarr;</a>
                 </div>
@@ -304,13 +313,12 @@
                 <div class="card-top">
                     <img class="app-icon" src="/assets/frosted-icon.webp" alt="Frosted app icon" width="64" height="64">
                     <span class="card-tag tag-active">Google Play • Closed Testing</span>
-                    <h2 class="app-title">Frosted</h2>
+                    <h2 class="app-title"><a class="card-link" href="/apps/frosted/">Frosted</a></h2>
                     <p class="app-desc">
                         Transparent frosted-glass home-screen widgets and wallpapers for Android: clock, weather, calendar, music, photos and more.
                     </p>
                 </div>
                 <div class="card-links">
-                    <a class="btn-link" href="/apps/frosted/">App page &rarr;</a>
                     <a class="btn-link" href="/glass-widgets/">Privacy Policy &rarr;</a>
                     <a class="btn-link" href="/glass-widgets/terms/">Terms of Service &rarr;</a>
                 </div>
