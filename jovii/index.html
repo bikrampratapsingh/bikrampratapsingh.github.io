@@ -125,7 +125,7 @@
             <strong>Application:</strong> Jovii - Device & Hardware Info<br>
             <strong>Package:</strong> com.bps.jovii<br>
             <strong>Developer:</strong> Jovii Studio<br>
-            <strong>Effective Date:</strong> October 27, 2026<br>
+            <strong>Effective Date:</strong> November 6, 2026<br>
             <strong>Public Policy URL:</strong> <a href="https://bikrampratapsingh.github.io/jovii/">https://bikrampratapsingh.github.io/jovii/</a>
         </div>
 
@@ -152,12 +152,13 @@
             <li><strong>Bluetooth &amp; Nearby Devices (BLUETOOTH, BLUETOOTH_CONNECT, NEARBY_WIFI_DEVICES):</strong> Declared with the <code>neverForLocation</code> flag. Used exclusively to read Wi-Fi connection details on Android 13+ and to detect connected Bluetooth audio accessories (such as wireless earbuds) and their battery level for display within the app and on the Bluetooth Earbuds widget. Never used to track physical location or scan for beacons.</li>
             <li><strong>Biometric Scanner (USE_BIOMETRIC):</strong> Used during interactive hardware diagnostics to verify the availability, security tier (Class 3 Strong / Weak), and responsiveness of biometric hardware (fingerprint scanner or face unlock). Authentication is executed exclusively by Android's secure <code>BiometricPrompt</code> and processed inside the device's hardware-isolated Secure Enclave / TEE. Jovii receives only an ephemeral pass/fail validation signal and never accesses biometric data or fingerprint/face templates.</li>
             <li><strong>Sensors (HIGH_SAMPLING_RATE_SENSORS) &amp; Vibration (VIBRATE):</strong> Used in the interactive Sensor Lab (Accelerometer, Compass, Light Sensor, Proximity Sensor, Gyroscope, Barometer) for real-time readings and vibration motor testing. Telemetry is processed entirely in volatile memory.</li>
-            <li><strong>Network &amp; Internet Features (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET):</strong> Used to query local network link speeds, Wi-Fi signal strength (dBm), and local IP addresses, and to power four optional HTTPS internet features (any server connected to receives your device's IP address as part of the standard connection):
+            <li><strong>Network &amp; Internet Features (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET):</strong> Used to query local network link speeds, Wi-Fi signal strength (dBm), and local IP addresses, and to power these optional internet features, which use HTTPS except for the ping and DNS tests (any server connected to receives your device's IP address as part of the standard connection):
                 <ul>
                     <li><em>Public IP &amp; ISP Lookup:</em> Requests your public IP address, internet provider name, and approximate city from <code>ipwho.is</code>, <code>ipify.org</code>, or <code>ipapi.co</code> for display in network details and on the Network widget. Users can mask the IP address in widget settings.</li>
                     <li><em>Network Speed Test:</em> Transfers standard test payloads against public CDN servers (Cloudflare <code>speed.cloudflare.com</code>, OVH <code>proof.ovh.net</code>, and jsDelivr <code>fastly.jsdelivr.net</code>) to measure throughput and latency. No personal data is transmitted.</li>
                     <li><em>Device Marketing Name Lookup:</em> Downloads Google Play's public list of supported devices (<code>storage.googleapis.com</code>) once to match your phone's model name locally on your device. No device details are sent.</li>
                     <li><em>Sunrise &amp; Sunset City Search:</em> Sends the city text you type to Open-Meteo's geocoding API (<code>geocoding-api.open-meteo.com</code>) to find matching coordinates. Jovii does not use GPS or device location services for this widget.</li>
+                    <li><em>Ping &amp; DNS Tests:</em> The network tools, Ping Inspector widget, and Network widget connect to public DNS servers run by Cloudflare (<code>1.1.1.1</code>), Google (<code>8.8.8.8</code>), Quad9 (<code>9.9.9.9</code>), and OpenDNS (<code>208.67.222.222</code>) to measure latency and check DNS. Latency checks only open a connection. DNS tests send a standard unencrypted lookup for a fixed domain (<code>google.com</code>). No personal data is included.</li>
                 </ul>
             </li>
             <li><strong>Notifications (POST_NOTIFICATIONS), Foreground Service (FOREGROUND_SERVICE, FOREGROUND_SERVICE_SPECIAL_USE) &amp; Startup (RECEIVE_BOOT_COMPLETED):</strong> Power optional battery/temperature/Wi-Fi alerts, the optional live status bar speed monitor, and widget/alarm restoration after a device restart.</li>
